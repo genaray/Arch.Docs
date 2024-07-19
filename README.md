@@ -40,25 +40,23 @@ using Arch;
 public struct Position{ float X, Y };
 public struct Velocity{ float Dx, Dy };
 
-public sealed class Game 
-{
-    public static void Main(string[] args) 
-    {     
-        // Create a world and entities with position and velocity.
-        var world = World.Create();
-        for (var index = 0; index < 1000; index++) 
-            world.Create(new Position{ X = 0, Y = 0}, new Velocity{ Dx = 1, Dy = 1});
-        
-        // Enumerate entities with Position AND Velocity to modify them
-        var query = new QueryDescription().WithAll<Position,Velocity>();
-        world.Query(in query, (Entity entity, ref Position pos, ref Velocity vel) => {
-            pos.X += vel.Dx;
-            pos.Y += vel.Dy;
-            Console.WriteLine($"Moved: {entity.Id}"); 
-        }); 
-    }
-}
+// Create a world and entities with position and velocity.
+var world = World.Create();
+for (var index = 0; index < 1000; index++) 
+    world.Create(new Position{ X = 0, Y = 0}, new Velocity{ Dx = 1, Dy = 1});
+
+// Enumerate entities with Position AND Velocity to modify them
+var query = new QueryDescription().WithAll<Position,Velocity>();
+world.Query(in query, (Entity entity, ref Position pos, ref Velocity vel) => {
+    pos.X += vel.Dx;
+    pos.Y += vel.Dy;
+    Console.WriteLine($"Moved: {entity.Id}"); 
+}); 
 ```
+
+{% hint style="info" %}
+This example is just a foretaste, more syntax and API await you on your adventure! Even non-generic ones and some without lambdas!
+{% endhint %}
 
 ### Setting off on an Odyssey <a href="#setting-off-on-an-odyssey" id="setting-off-on-an-odyssey"></a>
 
