@@ -2,7 +2,7 @@
 description: Your journey begins right here, we are excited to see what you create!
 ---
 
-# The start of your journey
+# 🌄 The start of your journey
 
 ### The dream <a href="#the-dream" id="the-dream"></a>
 
@@ -36,21 +36,20 @@ And your journey can begin! It wasn't difficult, was it? Let's take a look at th
 ```csharp
 using Arch;
 
-// Components ( ignore the formatting, this saves space )
-public struct Position{ float X, Y };
-public struct Velocity{ float Dx, Dy };
+// Components
+public record struct Position(float X, float Y);
+public record struct Velocity(float Dx, float Dy);
 
-// Create a world and entities with position and velocity.
-var world = World.Create();
-for (var index = 0; index < 1000; index++) 
-    world.Create(new Position{ X = 0, Y = 0}, new Velocity{ Dx = 1, Dy = 1});
+// Create a world and an entity with position and velocity.
+using var world = World.Create();
+var adventurer = world.Create(new Position(0,0), new Velocity(1,1));
 
-// Enumerate entities with Position AND Velocity to modify them
+// Enumerate all entities with Position & Velocity to move them
 var query = new QueryDescription().WithAll<Position,Velocity>();
 world.Query(in query, (Entity entity, ref Position pos, ref Velocity vel) => {
     pos.X += vel.Dx;
     pos.Y += vel.Dy;
-    Console.WriteLine($"Moved: {entity.Id}"); 
+    Console.WriteLine($"Moved adventurer: {entity.Id}"); 
 }); 
 ```
 
@@ -62,4 +61,4 @@ This example is just a foretaste, more syntax and API await you on your adventur
 
 You now know what Arch is and have added it to the project... Now you're standing there with your luggage and boots and don't know where to go? You're growing up so fast, let me help you.
 
-The world is so big and multifaceted. Next, you could plunge into the lake of documentation, climb the great mountain of examples or venture into the deep mines of the Extensions. It's hard for me to let you go, but I'm so excited to see where it will take you.
+The world is so big and multifaceted. Next, you could plunge into the lake of [documentation](https://app.gitbook.com/o/co3pTaMU4Lp5T5LS8Z57/s/nfCcmufJeTbGUsEptLXf/\~/changes/8/documentation), climb the great mountain of [examples](https://app.gitbook.com/o/co3pTaMU4Lp5T5LS8Z57/s/nfCcmufJeTbGUsEptLXf/\~/changes/8/examples) or venture into the deep mines of the [Extensions](https://app.gitbook.com/o/co3pTaMU4Lp5T5LS8Z57/s/nfCcmufJeTbGUsEptLXf/\~/changes/8/extensions). It's hard for me to let you go, but I'm so excited to see where it will take you.
