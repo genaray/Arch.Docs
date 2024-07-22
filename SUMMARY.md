@@ -5,6 +5,8 @@
 ## 📖 Documentation
 
 * [Concepts](documentation/concepts.md)
+* [World](documentation/world.md)
+* [Entity](documentation/entity.md)
 
 ## 🧩 Extensions
 

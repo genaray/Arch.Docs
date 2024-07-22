@@ -10,12 +10,53 @@ Hey, you. You are finally awake. You were trying to cross the border, right? I b
 
 Well, there's probably a lot to talk about, but let's start with the essentials.Arch is a high-performance C# based Archetype & Chunks [Entity Component System](https://www.wikiwand.com/en/Entity\_component\_system) (ECS) for game development and data-oriented programming. To summarize:
 
-* 🏎️ _**FAST**_ > Best cache efficiency, iteration, and allocation speed. Plays in the same league as C++/Rust ECS Libs!
-* 🚀 _**FASTER**_ > Arch is on average quite faster than other ECS implemented in C#. Check out this [Benchmark](https://github.com/Doraku/Ecs.CSharp.Benchmark)!
-* 🤏 _**BARE MINIMUM**_ > Not bloated, it's small and only provides the essentials for you!
-* ☕️ _**SIMPLE**_ > Promotes a clean, minimal, and self-explanatory API that is simple by design. Check out the [Wiki](https://github.com/genaray/Arch/wiki)!
-* 💪 _**MAINTAINED**_ > It's actively being worked on, maintained, and comes along several [Extensions](https://github.com/genaray/Arch.Extended)!
-* 🚢 _**SUPPORT**_ > Supports .NetStandard 2.1, .Net Core 6 and 7, and therefore you may use it with Unity or Godot!
+<details>
+
+<summary>🏎️ FAST </summary>
+
+Best cache efficiency, iteration, and allocation speed. Plays in the same league as C++/Rust ECS Libs!
+
+</details>
+
+<details>
+
+<summary>🚀 <em><strong>FASTER</strong></em></summary>
+
+Arch is on average quite faster than other ECS implemented in C#. Check out this [Benchmark](https://github.com/Doraku/Ecs.CSharp.Benchmark)!
+
+</details>
+
+<details>
+
+<summary>🤏 <em><strong>BARE MINIMUM</strong></em></summary>
+
+Not bloated, it's small and only provides the essentials for you!
+
+</details>
+
+<details>
+
+<summary>☕️ <em><strong>SIMPLE</strong></em> </summary>
+
+Promotes a clean, minimal, and self-explanatory API that is simple by design. Check out the [Wiki](https://github.com/genaray/Arch/wiki)!
+
+</details>
+
+<details>
+
+<summary>💪 <em><strong>MAINTAINED</strong></em> </summary>
+
+It's actively being worked on, maintained, and comes along several [Extensions](https://github.com/genaray/Arch.Extended)!
+
+</details>
+
+<details>
+
+<summary>🚢 <em><strong>SUPPORT</strong></em> </summary>
+
+Supports .NetStandard 2.1, .Net Core 6 and 7, and therefore you may use it with Unity or Godot!
+
+</details>
 
 ### Preparing for an adventure <a href="#preparing-for-an-adventure" id="preparing-for-an-adventure"></a>
 
