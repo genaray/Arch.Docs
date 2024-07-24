@@ -102,4 +102,4 @@ This example is just a foretaste, more syntax and API await you on your adventur
 
 You now know what Arch is and have added it to the project... Now you're standing there with your luggage and boots and don't know where to go? You're growing up so fast, let me help you.
 
-The world is so big and multifaceted. Next, you could plunge into the lake of [documentation](https://app.gitbook.com/o/co3pTaMU4Lp5T5LS8Z57/s/nfCcmufJeTbGUsEptLXf/\~/changes/8/documentation), climb the great mountain of [examples](https://app.gitbook.com/o/co3pTaMU4Lp5T5LS8Z57/s/nfCcmufJeTbGUsEptLXf/\~/changes/8/examples) or venture into the deep mines of the [Extensions](https://app.gitbook.com/o/co3pTaMU4Lp5T5LS8Z57/s/nfCcmufJeTbGUsEptLXf/\~/changes/8/extensions). It's hard for me to let you go, but I'm so excited to see where it will take you.
+The world is so big and multifaceted. Next, you could plunge into the lake of[ documentation](broken-reference), climb the great mountain of [examples ](broken-reference)or venture into the deep mines of the[ Extensions](broken-reference). It's hard for me to let you go, but I'm so excited to see where it will take you.

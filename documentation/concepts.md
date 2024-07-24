@@ -8,7 +8,7 @@ description: >-
 
 There you are again! I've missed you already, we haven't seen each other for a long time. I beg your pardon? You're asking what's behind Arch and an ECS? Then you'd better buckle up.
 
-Arch is an [Entity-Component System](https://www.wikiwand.com/en/Entity\_component\_system) (ECS) which is an architectural pattern that favors composition over inheritance. **Entities** are small, unique identifiers, and **Components** are data attached to them. The term **Systems** often refers to the logic that operates on this data.
+Arch is an [Entity-Component System](https://www.wikiwand.com/en/Entity\_component\_system) (ECS) which is an architectural pattern that favors composition over inheritance. [**Entities**](entity.md) are small, unique identifiers, and [**Components**](entity.md#changing-lives) are data attached to them. The term [**Systems**](query.md) often refers to the logic that operates on this data.
 
 ## ECS in a nutshell
 

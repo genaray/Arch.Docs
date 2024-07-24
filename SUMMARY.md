@@ -7,6 +7,7 @@
 * [Concepts](documentation/concepts.md)
 * [World](documentation/world.md)
 * [Entity](documentation/entity.md)
+* [Query](documentation/query.md)
 
 ## 🧩 Extensions
 
