@@ -90,7 +90,7 @@ var secondQueryDesc = new QueryDescription().WithAll<Dwarf, Position, Velocity>(
 ```
 
 {% hint style="danger" %}
-No. Both `QueryDescriptions` would also target dwarfs that have additional components (e.g. \[`Dwarf, Position, Velocity, Bow]`). We do not want that.
+No. Both `QueryDescriptions` would also target dwarfs that have additional components (e.g. \[`Dwarf, Position, Velocity, Bow`]). We do not want that.
 {% endhint %}
 
 Instead, we only want to target this one type of dwarf. No more or less components on them.
