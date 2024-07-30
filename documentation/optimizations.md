@@ -1,64 +1,68 @@
+---
+description: >-
+  While your servants scurry around you and fulfill their tasks, you suddenly
+  ask yourself... how do you actually make these processes more efficient?
+---
+
 # Optimizations
 
-## Passing parameters to updates
+Look at how you've worked your way up. There you are as a manager, dealing with the question of how to make everything more efficient and perform better. Come on, let's discuss this in more detail!
 
-There are several ways to pass parameters during [query](query.md) iteration.
+## Clojure
 
-DeltaTime will be used as an example.
+The easiest way is to transfer the value directly to the [query](query.md). This is called Clojure. It is simple, but not particularly efficient. For most purposes, however, it will suffice.
 
-### Clojure 
-The easiest, yet the slowest. 
-
-Notice this causes **garbage** allocation for clojure of DeltaTime each call
-```csharp
-World.Query(in queryDesc,
-(ref Position pos, ref Velocity vel) =>
-{
-    pos.Value.X += vel.Value.X * DeltaTime;
-    pos.Value.Y += vel.Value.Y * DeltaTime;
+<pre class="language-csharp"><code class="lang-csharp"><a data-footnote-ref href="#user-content-fn-1">var deltaTime = 10.0f;</a>
+World.Query(in queryDesc, (ref Position pos, ref Velocity vel) => {
+    pos.X += vel.X * deltaTime;
+    pos.Y += vel.Y * deltaTime;
 });
-```
+</code></pre>
 
- Alternativly you can use static variables to pass parameters without allocation, for example using static class Time, with public property DeltaTime. 
-```csharp
+{% hint style="warning" %}
+Allocates the passed value on the heap with each call. Produces garbage that could be avoided.
+{% endhint %}
 
-public static class Time
-{
-    public float DeltaTime { get; private set; }
-}
+Alternatively, you can cache the `static` value, which avoids the allocation. This is not possible everywhere, but where it works, it works wonderfully.
 
-World.Query(in queryDesc,
-(ref Position pos, ref Velocity vel) =>
-{
-    pos.Value.X += vel.Value.X * Time.DeltaTime;
-    pos.Value.Y += vel.Value.Y * Time.DeltaTime;
+<pre class="language-csharp"><code class="lang-csharp">private static float _deltaTime;
+World.Query(in queryDesc, <a data-footnote-ref href="#user-content-fn-2">static</a> (ref Position pos, ref Velocity vel) => {
+    pos.X += vel.X * _deltaTime;
+    pos.Y += vel.Y * _deltaTime;
 });
-```
+</code></pre>
 
-### Custom inline query with parameters
-To pass parameters this way we use a separate struct implementing `IForEach`, which has update method, and any required parameters are set to the struct.
+### Inline query
+
+Another way is to pass on the values using a Struct. For this we can use the `InlineQuery` and the `IForEach` interface.
+
 ```csharp
-private struct VelocityUpdate : IForEach<Position, Velocity>
+private struct VelocityUpdate: IForEach<Position, Velocity>
 {
     public float DeltaTime;
     
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public void Update(ref Position pos, ref Velocity vel)
     {
-    pos.Value.X += vel.Value.X * DeltaTime;
-    pos.Value.Y += vel.Value.Y * DeltaTime;
+        pos.X += vel.X * DeltaTime;
+        pos.Y += vel.Y * DeltaTime;
     }
 }
 
-var velUpdate = new VelocityUpdate
-{
-    DeltaTime = DeltaTime
-};
+var velUpdate = new VelocityUpdate{ DeltaTime = 10.0f; };
 World.InlineQuery<VelocityUpdate, Position, Velocity>(in queryDesc, ref velUpdate);
 ```
 
+{% hint style="success" %}
+The struct prevents the value from being associated. This method is fast and efficient, produces no garbage!
+{% endhint %}
+
 ### Custom loop
-Iterate `chunks` by hand, this way we can use params directly
+
+That's not enough for you? Well, then we have one last ace up our sleeve. Drink this potion, it will enable you to write queries yourself!
+
+You can now iterate archetypes and chunks yourself, which removes any abstraction. This in turn allows you to pass values and logic however you want.
+
 ```csharp
 var queryDesc = new QueryDescription().WithAll<Position, Velocity>();
 var query = World.Query(in queryDesc);
@@ -73,8 +77,16 @@ foreach (ref var chunk in query)
         ref var pos = ref positions[i];
         ref var vel = ref velocities[i];
         
-        pos.Value.X += vel.Value.X * DeltaTime;
-        pos.Value.Y += vel.Value.Y * DeltaTime;
+        pos.X += vel.X * DeltaTime;
+        pos.Y += velue.Y * DeltaTime;
     }
 }
 ```
+
+{% hint style="success" %}
+Fast and efficient. It doesn't really get more efficient than that! It's more boilerplate code, but it's really useful here and there. By the way, if that's not enough for you, have you looked at the source generators?
+{% endhint %}
+
+[^1]: Or, of course, as an attribute somewhere.
+
+[^2]: This is optional, but quite nice. It informs the compiler that only static values from outside are allowed in the lambda.

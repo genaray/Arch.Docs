@@ -44,7 +44,7 @@ See how your creatures are marching now, do you feel the power? But what do we d
 var letDwarfsAndHumansMine = new QueryDescription().WithAll<Pickaxe>().None<Elve>();
 world.Query(in movementQuery, (ref Pickaxe pickaxe) => {
     var rock = FindNextRock();
-    pickaxe.MineSomeOres(rock);
+    MineSomeOres(pickaxe, rock);
 });
 ```
 
