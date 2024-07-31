@@ -17,7 +17,7 @@ One dwarf has probably become hundreds. And the elves and humans have also joine
 <pre class="language-csharp"><code class="lang-csharp">// Creating an army of dwarfs
 for(var index = 0; index &#x3C; 1_000, index++){
     world.Create(new Dwarf(), new Position(0,0), new Velocity(1,1), new Pickaxe());
-    world.Create(new Elve(), new Position(0,0), new Velocity(1,1), new Bow());
+    world.Create(new Elf(), new Position(0,0), new Velocity(1,1), new Bow());
     world.Create(new Human(), new Position(0,0), new Velocity(1,1), new Pickaxe(), new Sword());
 }
 
@@ -41,7 +41,7 @@ See how your creatures are marching now, do you feel the power? But what do we d
 
 ```csharp
 // Targets entities with a pickaxe that are not Elven. So humans and dwarves.
-var letDwarfsAndHumansMine = new QueryDescription().WithAll<Pickaxe>().None<Elve>();
+var letDwarfsAndHumansMine = new QueryDescription().WithAll<Pickaxe>().None<Elf>();
 world.Query(in movementQuery, (ref Pickaxe pickaxe) => {
     var rock = FindNextRock();
     MineSomeOres(pickaxe, rock);

@@ -8,6 +8,7 @@
 * [World](documentation/world.md)
 * [Entity](documentation/entity.md)
 * [Query](documentation/query.md)
+* [Archetypes & Chunks](documentation/archetypes-and-chunks.md)
 * [Optimizations](documentation/optimizations.md)
 
 ## 🧩 Extensions
