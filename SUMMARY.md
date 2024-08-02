@@ -12,6 +12,9 @@
 * [Optimizations](documentation/optimizations/README.md)
   * [Query-Techniques](documentation/optimizations/query-techniques.md)
   * [Pass on data](documentation/optimizations/pass-on-data.md)
+  * [Batch and Bulk](documentation/optimizations/batch-and-bulk.md)
+  * [PURE\_ECS](documentation/optimizations/pure\_ecs.md)
+* [Utilities](documentation/utilities.md)
 
 ## 🧩 Extensions
 
