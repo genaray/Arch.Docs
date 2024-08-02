@@ -1,18 +1,14 @@
 ---
-description: >-
-  While your servants scurry around you and fulfill their tasks, you suddenly
-  ask yourself... how do you actually make these processes more efficient?
+description: How do I actually pass data to the commands that I issue to my entities?
 ---
 
-# Optimizations
-
-Look at how you've worked your way up. There you are as a manager, dealing with the question of how to make everything **more** **efficient** and perform better. Come on, let's discuss this in more detail!
+# Pass on data
 
 ## Clojure
 
 Look, we have an intruder here! It's time to send our army there to eliminate the threat. But how do we even do that?
 
-The easiest way is to transfer the value directly to the [query](query.md). This is called **Clojure**. It is simple, but not particularly efficient. For most purposes, however, it will suffice.
+The easiest way is to transfer the value directly to the [query](../query.md). This is called **Clojure**. It is simple, but not particularly efficient. For most purposes, however, it will suffice.
 
 <pre class="language-csharp"><code class="lang-csharp"><a data-footnote-ref href="#user-content-fn-1">var intruderPosition = DetectIntruder();</a>
 World.Query(in queryDesc, (ref Position pos, ref Velocity vel) => {
@@ -97,8 +93,8 @@ And now you can move even more entities efficiently, perhaps even hundreds of th
 
 [^3]: This is optional, but quite nice. It informs the compiler that only static values from outside are allowed in the lambda.
 
-[^4]: Returns a [`Query`](query.md) that allows us to manually iterate over all [entities](entity.md) that are addressed by it.
+[^4]: Returns a [`Query`](../query.md) that allows us to manually iterate over all [entities](../entity.md) that are addressed by it.
 
 [^5]: Returns the underlying component arrays as spans. We can iterate these ourselves to execute logic.
 
-[^6]: Enumerates over all [Entities](entity.md) in this chunk to acess their components.&#x20;
+[^6]: Enumerates over all [Entities](../entity.md) in this chunk to acess their components.&#x20;

@@ -6,10 +6,12 @@
 
 * [Concepts](documentation/concepts.md)
 * [World](documentation/world.md)
+* [Archetypes & Chunks](documentation/archetypes-and-chunks.md)
 * [Entity](documentation/entity.md)
 * [Query](documentation/query.md)
-* [Archetypes & Chunks](documentation/archetypes-and-chunks.md)
-* [Optimizations](documentation/optimizations.md)
+* [Optimizations](documentation/optimizations/README.md)
+  * [Query-Techniques](documentation/optimizations/query-techniques.md)
+  * [Pass on data](documentation/optimizations/pass-on-data.md)
 
 ## 🧩 Extensions
 
