@@ -14,7 +14,13 @@
   * [Pass on data](documentation/optimizations/pass-on-data.md)
   * [Batch and Bulk](documentation/optimizations/batch-and-bulk.md)
   * [PURE\_ECS](documentation/optimizations/pure\_ecs.md)
-* [Utilities](documentation/utilities.md)
+  * [Multithreading](documentation/optimizations/multithreading.md)
+* [Utilities](documentation/utilities/README.md)
+  * [Component Registration](documentation/utilities/component-registration.md)
+  * [Non-generic API](documentation/utilities/non-generic-api.md)
+  * [EntityReference](documentation/utilities/entityreference.md)
+  * [CommandBuffer](documentation/utilities/commandbuffer.md)
+  * [Events](documentation/utilities/events.md)
 
 ## 🧩 Extensions
 

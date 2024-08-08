@@ -30,7 +30,7 @@ world.Query(in movementQuery, (Entity entity, ref Position pos, ref Velocity vel
 </code></pre>
 
 {% hint style="info" %}
-The methods of the `QueryDescription` can accept up to 25 generic parameters and can be chained together. A `QueryDescription` can also be created without generics by passing `Signature`. More on this later.
+The methods of the `QueryDescription` can accept up to 25 generic parameters and can be chained together.  Can also be created without generics by passing [`Signature`](utilities/non-generic-api.md). There multiple different [`Query-Variants`](optimizations/query-techniques.md). More on this later.
 {% endhint %}
 
 It looks wonderful, all entities are already moving. It doesn't matter whether they are dwarves, elves or humans. As long as they have the **Position & Velocity** components, they move!
