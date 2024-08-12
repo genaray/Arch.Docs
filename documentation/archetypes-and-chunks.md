@@ -2,6 +2,8 @@
 description: >-
   You push deeper and deeper into the world... and realise that there is a
   hidden order in the chaos.
+cover: ../.gitbook/assets/a picture in th 38bbd35d-4a3f-428d-8f86-fc3bd3126bbe.png
+coverY: 32
 ---
 
 # Archetypes & Chunks

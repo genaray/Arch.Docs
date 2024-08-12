@@ -2,6 +2,8 @@
 description: >-
   One living dwarf is not enough for you, you want more... but you ask yourself
   how you would manage an army of dwarves at all.
+cover: ../.gitbook/assets/((The picture i 143d4136-2eea-4be8-8b36-500d07be3e2f.png
+coverY: -156.4084388185654
 ---
 
 # Query
