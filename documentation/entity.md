@@ -2,6 +2,8 @@
 description: >-
   You make your way through the thicket and suddenly there's an entity... but
   what is it?
+cover: ../.gitbook/assets/wJcs9lQWunu55aaeUEwKq.png
+coverY: 55
 ---
 
 # Entity

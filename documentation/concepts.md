@@ -2,6 +2,8 @@
 description: >-
   Your thoughts only revolve around your journey, they won't let you go... You
   ask yourself what Arch actually is.
+cover: ../.gitbook/assets/rwTXvgftWITiE5XEgmUjC.png
+coverY: 0
 ---
 
 # Concepts

@@ -1,5 +1,7 @@
 ---
 description: Now you have taken courage and set off into the big wide world.
+cover: ../.gitbook/assets/OMfGL3xXYutK0_jJQ5T6r.png
+coverY: 0
 ---
 
 # World

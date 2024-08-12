@@ -1,5 +1,21 @@
 ---
 description: Your journey begins right here, we are excited to see what you create!
+cover: .gitbook/assets/FFjUBkDk7GvimorPpENDf.png
+coverY: 65.64701175293823
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # 🌄 The start of your journey
