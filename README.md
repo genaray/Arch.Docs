@@ -119,3 +119,7 @@ This example is just a foretaste, more syntax and API await you on your adventur
 You now know what Arch is and have added it to the project... Now you're standing there with your luggage and boots and don't know where to go? You're growing up so fast, let me help you.
 
 The world is so big and multifaceted. Next, you could plunge into the lake of[ documentation](broken-reference), climb the great mountain of [examples ](broken-reference)or venture into the deep mines of the[ Extensions](broken-reference). It's hard for me to let you go, but I'm so excited to see where it will take you.
+
+## The world of open source...
+
+But before you leave, take a moment to look at this beautiful world... Do you notice anything? It is completely **open source**! You can **contribute** and **change** every aspect! So if you like it, [**leave a star** ⭐](https://github.com/genaray/Arch) and [**buy us a coffee** ☕](https://github.com/sponsors/genaray)!
