@@ -24,12 +24,12 @@
 
 ## 🧩 Extensions
 
-* [Page 3](extensions/page-3.md)
+* [WIP](extensions/page-3.md)
 
 ## 💡 Examples
 
-* [Page 2](examples/page-2.md)
+* [WIP](examples/page-2.md)
 
 ## ✏️ Misc
 
-* [Page 4](misc/page-4.md)
+* [WIP](misc/page-4.md)
