@@ -10,7 +10,7 @@ coverY: 55
 
 In an [entity component system (ECS)](concepts.md), an entity is simply a **unique ID** tag. It represents **an object** in the game or application, but has no logic or data itself. The data and behavior come from **components** that are attached to this entity.
 
-An `Entity` is nothing more than a simple `record struct Entity{ int ID, ... }`. Either you work directly on this entity and its methods, or you simply use `PURE_ECS`. More on this later.
+An `Entity` is nothing more than a simple `record struct Entity{ int ID, int WorldId }`. Either you work directly on this entity and its methods, or you simply use [`PURE_ECS`](optimizations/pure\_ecs.md). More on this later.
 
 {% hint style="info" %}
 Its components can be **anything**, **primitive data types**, **structs** and even **classes**! YOU determine which components and attributes an entity receives, there are **no restrictions** here!
@@ -28,7 +28,7 @@ I'm not a dark mage, but I can tell you a little about how to create life. It's 
 </strong></code></pre>
 
 {% hint style="info" %}
-Components may vary and this example uses generics, if you don't feel like using generics, there are still plenty of APIs without them.
+Components may vary and this example uses generics, if you don't feel like using generics, there are still [plenty of APIs without them](utilities/non-generic-api.md).
 {% endhint %}
 
 It can be that simple. How does it feel to be a god?

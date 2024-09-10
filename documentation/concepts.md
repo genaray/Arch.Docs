@@ -84,7 +84,7 @@ Arch is from the community for the community. You can participate, create forks,
 
 <details>
 
-<summary>Archetypes &#x26; Chunks</summary>
+<summary><a href="concepts.md#archetypes-and-chunks">Archetypes &#x26; Chunks</a></summary>
 
 Arch not only has archetypes but also chunks. This sets it apart from many other ECSs. Each archetype has several chunks. Chunks themselves are 64KB memory blocks and contain the entities and their components directly. The big advantage of this is that it is more efficient to iterate and allocate. Fast, efficient and memory friendly.
 
@@ -92,7 +92,7 @@ Arch not only has archetypes but also chunks. This sets it apart from many other
 
 <details>
 
-<summary>Small entities and `PURE_ECS`</summary>
+<summary><a href="optimizations/pure_ecs.md">Small entities and `PURE_ECS`</a></summary>
 
 Arch's entities are as small as possible, no unnecessary data is stored. If you want to make your entities even smaller, Arch supports the concept of “Pure ECS”. This makes entities even smaller and more memory-friendly.
 
@@ -100,7 +100,7 @@ Arch's entities are as small as possible, no unnecessary data is stored. If you 
 
 <details>
 
-<summary>Versatile and fast queries</summary>
+<summary><a href="optimizations/query-techniques.md">Versatile and fast queries</a></summary>
 
 You don't feel like writing delegates to edit entities? Don't worry, arch has you covered! We support a variety of different query types, from delegates to interfaces to manual enumeration and even source generation!
 
@@ -108,7 +108,7 @@ You don't feel like writing delegates to edit entities? Don't worry, arch has yo
 
 <details>
 
-<summary>Bulk &#x26; Batch</summary>
+<summary><a href="concepts.md#bulk-and-batch">Bulk &#x26; Batch</a></summary>
 
 It is also possible to create, change and delete entities in bulk. This is even more efficient than doing this for each entity individually, Arch is incredibly efficient.
 
@@ -116,7 +116,7 @@ It is also possible to create, change and delete entities in bulk. This is even 
 
 <details>
 
-<summary>Multithreading &#x26; Jobs</summary>
+<summary><a href="optimizations/multithreading.md">Multithreading &#x26; Jobs</a></summary>
 
 For even more efficiency and large amounts of data and entities, there is multithreading and jobs. The best thing about it, without creating garbage. Arch has its own JobScheduler that was written just for this purpose. This allows you to bring your huge worlds to life even better!
 
@@ -124,7 +124,7 @@ For even more efficiency and large amounts of data and entities, there is multit
 
 <details>
 
-<summary>CommandBuffer</summary>
+<summary><a href="concepts.md#commandbuffer">CommandBuffer</a></summary>
 
 You don't want to make changes to entities immediately but only later? No problem! Arch has even taken this into consideration: with the CommandBuffer you can postpone these changes and execute them at a later time.
 
@@ -132,7 +132,7 @@ You don't want to make changes to entities immediately but only later? No proble
 
 <details>
 
-<summary>Events</summary>
+<summary><a href="concepts.md#events">Events</a></summary>
 
 Entity events are one of the things that are not included by default in the nugget, but you can easily enable them through the source code using a flag! You only pay for what you use!
 
@@ -140,7 +140,7 @@ Entity events are one of the things that are not included by default in the nugg
 
 <details>
 
-<summary>Generic &#x26; Non-Generic API</summary>
+<summary><a href="utilities/non-generic-api.md">Generic &#x26; Non-Generic API</a></summary>
 
 Of course, you can also use the API with simple types. Nobody is forcing you to use generics. This is often very helpful, especially when it comes to persistence and reflection.
 

@@ -79,7 +79,7 @@ Supports .NetStandard 2.1, .Net Core 6 and 7, and therefore you may use it with 
 Put on your boots and give it a try, it's easier than you thought...
 
 ```sh
-dotnet add PROJECT package Arch --version 1.2.8.1-alpha
+dotnet add PROJECT package Arch --version 1.3.0-alpha
 ```
 
 Don't miss your luggage and briefly import Arch...

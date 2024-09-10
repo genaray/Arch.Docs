@@ -24,7 +24,9 @@
 
 ## 🧩 Extensions
 
-* [WIP](extensions/page-3.md)
+* [Arch.Extended](extensions/page-3/README.md)
+  * [Arch.System](extensions/page-3/arch.system.md)
+  * [Arch.System.SourceGenerator](extensions/page-3/arch.system.sourcegenerator.md)
 
 ## 💡 Examples
 
