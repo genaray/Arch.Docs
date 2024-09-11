@@ -59,7 +59,7 @@ Of course, every form of [`Query`](../query.md) is supported again. Even [**inli
     }
 }
 
-world.ParallelInlineQuery&#x3C;VelocityUpdate, Position, Velocity>(<a data-footnote-ref href="#user-content-fn-5">in queryDescription</a>); 
+world.InlineParallelQuery&#x3C;VelocityUpdate, Position, Velocity>(<a data-footnote-ref href="#user-content-fn-5">in queryDescription</a>); 
 </code></pre>
 
 {% hint style="warning" %}
@@ -86,7 +86,7 @@ If this is all too high level for you, there is also the option of tackling the 
    }
 }
 
-world.ParallelQuery(in query, <a data-footnote-ref href="#user-content-fn-6">new VelocityUpdate()</a>);
+world.InlineParallelChunkQuery(in query, <a data-footnote-ref href="#user-content-fn-6">new VelocityUpdate()</a>);
 </code></pre>
 
 {% hint style="info" %}
