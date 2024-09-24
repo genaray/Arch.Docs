@@ -30,7 +30,7 @@
 
 ## 💡 Examples
 
-* [WIP](examples/page-2.md)
+* [Entities in Query](examples/page-2.md)
 
 ## ✏️ Misc
 
