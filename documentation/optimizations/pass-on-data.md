@@ -4,11 +4,11 @@ description: How do I actually pass data to the commands that I issue to my enti
 
 # Pass on data
 
-## Clojure
+## Closure
 
 Look, we have an intruder here! It's time to send our army there to eliminate the threat. But how do we even do that?
 
-The easiest way is to transfer the value directly to the [query](../query.md). This is called **Clojure**. It is simple, but not particularly efficient. For most purposes, however, it will suffice.
+The easiest way is to transfer the value directly to the [query](../query.md). This is called **Closure**. It is simple, but not particularly efficient. For most purposes, however, it will suffice.
 
 <pre class="language-csharp"><code class="lang-csharp"><a data-footnote-ref href="#user-content-fn-1">var intruderPosition = DetectIntruder();</a>
 World.Query(in queryDesc, (ref Position pos, ref Velocity vel) => {
