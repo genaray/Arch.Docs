@@ -41,7 +41,7 @@ So you don't stop at changing lives, do you? Entities can be changed in a variet
 var dwarf = world.Create(new Dwarf("Gimli"), new Position(0,0), new Velocity());
 
 // Telepor the dwarf
-ref var position = ref <a data-footnote-ref href="#user-content-fn-1">dwarf.Get&#x3C;Position>;</a>
+ref var position = ref <a data-footnote-ref href="#user-content-fn-1">dwarf.Get&#x3C;Position>();</a>
 position.X++;
 position.Y++;
 
@@ -49,7 +49,7 @@ position.Y++;
 dwarf.Set(new Velocity(1,1));
 
 // Give the dwarf a pickaxe and make him sad by taking it away
-if(!dwarf.Has&#x3C;Pickaxe>) <a data-footnote-ref href="#user-content-fn-2">dwarf.Add(new Pickaxe());</a>
+if(!dwarf.Has&#x3C;Pickaxe>()) <a data-footnote-ref href="#user-content-fn-2">dwarf.Add(new Pickaxe());</a>
 dwarf.Remove&#x3C;Pickaxe>();
 </code></pre>
 
