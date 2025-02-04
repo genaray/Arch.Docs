@@ -23,7 +23,7 @@ I'm not a dark mage, but I can tell you a little about how to create life. It's 
 <pre class="language-csharp"><code class="lang-csharp">var world = World.Create(); // Must exist somewhere
 
 // A dwarf with a string, position and velocity component was born and killed
-<strong>var dwarf = world.Create(new Dwarf("Gimli)", new Position(0,0), new Velocity());
+<strong>var dwarf = world.Create(new Dwarf("Gimli"), new Position(0,0), new Velocity());
 </strong><strong>if(dwarf.IsAlive()) world.Destroy(dwarf);
 </strong></code></pre>
 
