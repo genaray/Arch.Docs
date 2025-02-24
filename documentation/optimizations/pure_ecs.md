@@ -28,7 +28,7 @@ var gimli = world.Create(new Dwarf(), new Position(), new Velocity());
 // Making our dwarf teleport
 if(gimli.Has<Position>()){
     ref var pos = ref gimli.Get<Position>();
-    gimli.Set(TeleportRandomlyNear(ref pos);
+    gimli.Set(TeleportRandomlyNear(ref pos));
 }
 ```
 
@@ -40,7 +40,7 @@ All methods of the [`Entity`](../entity.md) struct are no longer available with 
 // Making our dwarf teleport
 if(world.Has<Position>(gimli)){
     ref var pos = ref world.Get<Position>(gimli);
-    world.Set(gimli, TeleportRandomlyNear(ref pos);
+    world.Set(gimli, TeleportRandomlyNear(ref pos));
 }
 ```
 
