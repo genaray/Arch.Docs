@@ -1,5 +1,7 @@
 ---
-description: ECS, a data oriented architecture helping you everywhere.
+description: >-
+  ECS, a data oriented architecture bringing flexibility, reusable components
+  and performance to you.
 ---
 
 # Concepts
