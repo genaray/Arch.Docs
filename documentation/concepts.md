@@ -1,5 +1,5 @@
 ---
-description: Let's talk about Archs concepts, what even is an ECS?
+description: ECS, a data oriented architecture helping you everywhere.
 ---
 
 # Concepts
