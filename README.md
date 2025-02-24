@@ -1,5 +1,5 @@
 ---
-description: Your journey begins right here, we are excited to see what you create!
+description: Arch, a high-performance and bare minimum C# ECS.
 cover: .gitbook/assets/arch-banner-2.png
 coverY: 547.5749999999999
 layout:
@@ -18,9 +18,7 @@ layout:
     visible: true
 ---
 
-# 🌄 The start of your journey
-
-### What is Arch? <a href="#the-dream" id="the-dream"></a>
+# 🌄 What is Arch?
 
 Let's start with the essentials. Arch is a high-performance C# based Archetype & Chunks [Entity Component System](https://www.wikiwand.com/en/Entity_component_system) (ECS) for game development and data-oriented programming. To summarize:
 
@@ -72,7 +70,7 @@ Supports .NetStandard 2.1, .Net Core 8, and therefore you may use it with Unity,
 
 </details>
 
-### Preparing for an adventure <a href="#preparing-for-an-adventure" id="preparing-for-an-adventure"></a>
+### Example <a href="#preparing-for-an-adventure" id="preparing-for-an-adventure"></a>
 
 Put on your boots and give it a try, it's easier than you thought...
 

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌄 The start of your journey](README.md)
+* [🌄 What is Arch?](README.md)
 
 ## 📖 Documentation
 
@@ -13,7 +13,7 @@
   * [Query-Techniques](documentation/optimizations/query-techniques.md)
   * [Pass on data](documentation/optimizations/pass-on-data.md)
   * [Batch and Bulk](documentation/optimizations/batch-and-bulk.md)
-  * [PURE\_ECS](documentation/optimizations/pure\_ecs.md)
+  * [PURE\_ECS](documentation/optimizations/pure_ecs.md)
   * [Multithreading](documentation/optimizations/multithreading.md)
 * [Utilities](documentation/utilities/README.md)
   * [Component Registration](documentation/utilities/component-registration.md)
