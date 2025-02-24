@@ -1,11 +1,11 @@
 ---
 description: Your journey begins right here, we are excited to see what you create!
-cover: .gitbook/assets/FFjUBkDk7GvimorPpENDf.png
-coverY: 65.64701175293823
+cover: .gitbook/assets/arch-banner-2.png
+coverY: 547.5749999999999
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:
@@ -20,11 +20,9 @@ layout:
 
 # 🌄 The start of your journey
 
-### The dream <a href="#the-dream" id="the-dream"></a>
+### What is Arch? <a href="#the-dream" id="the-dream"></a>
 
-Hey, you. You are finally awake. You were trying to cross the border, right? I bet you're wondering where you've ended up and what Arch actually is, aren't you? I'm glad you asked!&#x20;
-
-Well, there's probably a lot to talk about, but let's start with the essentials.Arch is a high-performance C# based Archetype & Chunks [Entity Component System](https://www.wikiwand.com/en/Entity\_component\_system) (ECS) for game development and data-oriented programming. To summarize:
+Let's start with the essentials. Arch is a high-performance C# based Archetype & Chunks [Entity Component System](https://www.wikiwand.com/en/Entity_component_system) (ECS) for game development and data-oriented programming. To summarize:
 
 <details>
 
@@ -70,7 +68,7 @@ It's actively being worked on, maintained, and comes along several [Extensions](
 
 <summary>🚢 <em><strong>SUPPORT</strong></em> </summary>
 
-Supports .NetStandard 2.1, .Net Core 6 and 7, and therefore you may use it with Unity or Godot!
+Supports .NetStandard 2.1, .Net Core 8, and therefore you may use it with Unity, Godot or any other C#-Project!
 
 </details>
 
@@ -79,7 +77,7 @@ Supports .NetStandard 2.1, .Net Core 6 and 7, and therefore you may use it with 
 Put on your boots and give it a try, it's easier than you thought...
 
 ```sh
-dotnet add PROJECT package Arch --version 1.3.0-alpha
+dotnet add PROJECT package Arch --version 1.3.3-alpha
 ```
 
 Don't miss your luggage and briefly import Arch...
@@ -88,7 +86,7 @@ Don't miss your luggage and briefly import Arch...
 using Arch;
 ```
 
-And your journey can begin! It wasn't difficult, was it? Let's take a look at this example together, it should open your tired eyes and show you where the journey is heading.
+And your journey can begin! It wasn't difficult, was it? Let's take a look at this example together, it should open your eyes and show you where the journey is heading.
 
 ```csharp
 using Arch;
@@ -114,12 +112,10 @@ world.Query(in query, (Entity entity, ref Position pos, ref Velocity vel) => {
 This example is just a foretaste, more syntax and API await you on your adventure! Even non-generic ones and some without lambdas!
 {% endhint %}
 
-### Setting off on an Odyssey <a href="#setting-off-on-an-odyssey" id="setting-off-on-an-odyssey"></a>
+### Next steps <a href="#setting-off-on-an-odyssey" id="setting-off-on-an-odyssey"></a>
 
-You now know what Arch is and have added it to the project... Now you're standing there with your luggage and boots and don't know where to go? You're growing up so fast, let me help you.
-
-The world is so big and multifaceted. Next, you could plunge into the lake of[ documentation](broken-reference), climb the great mountain of [examples ](broken-reference)or venture into the deep mines of the[ Extensions](broken-reference). It's hard for me to let you go, but I'm so excited to see where it will take you.
+Where to next? Arch is packed with features. Look at the[ documentation](broken-reference), play around with the [examples ](broken-reference)or make yourself familiar with the[ Extensions](broken-reference). It's hard for me to let you go, but I'm so excited to see where it will take you.
 
 ## The world of open source...
 
-But before you leave, take a moment to look at this beautiful world... Do you notice anything? It is completely **open source**! You can **contribute** and **change** every aspect! So if you like it, [**leave a star** ⭐](https://github.com/genaray/Arch) and [**buy us a coffee** ☕](https://github.com/sponsors/genaray)!
+But before you leave, take a moment to value this project. Do you notice anything? It is completely **open source**! You can **contribute** and **change** every aspect! So if you like it, [**leave a star** ⭐](https://github.com/genaray/Arch) and [**buy us a coffee** ☕](https://github.com/sponsors/genaray) to support further development!

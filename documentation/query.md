@@ -1,18 +1,14 @@
 ---
-description: >-
-  One living dwarf is not enough for you, you want more... but you ask yourself
-  how you would manage an army of dwarves at all.
-cover: ../.gitbook/assets/((The picture i 143d4136-2eea-4be8-8b36-500d07be3e2f.png
-coverY: -156.4084388185654
+description: The Query, a way to select and iterate entities
 ---
 
 # Query
 
-Look at you... you've only just come across your first Dwarf-[Entity](entity.md) and you're already planning bigger things like the War for Middle-earth. Time flies so fast. And of course I can help you with that too. But how do you actually organize your entities? Well, there are queries for that.
+But how do you actually organize your entities? Well, there are queries for that.
 
 A `Query` is a view of the [World](world.md) and **targets a specific set of** [**entities**](entity.md). It only consists of a `QueryDescription`, which specifies which entities with **which structure are being searched for**. You can specify which components an entity should definitely have, which it should perhaps have and which it should not have at all. It is also possible to search only for the exclusive structure of an entity. Let's take a look at this!
 
-## Send out the orders
+## Iteration
 
 One dwarf has probably become hundreds. And the elves and humans have also joined us. They buzz around, without a goal, without a task. Time to crack the whip, isn't it?
 
@@ -37,7 +33,7 @@ The methods of the `QueryDescription` can accept up to 25 generic parameters and
 
 It looks wonderful, all entities are already moving. It doesn't matter whether they are dwarves, elves or humans. As long as they have the **Position & Velocity** components, they move!
 
-## Divide and conquer
+## Any and None
 
 See how your creatures are marching now, do you feel the power? But what do we do, for example, if we want all beings with a pickaxe **except** the highborn Elven to work for us in the mines? It's time to make the queries a little more complex.
 

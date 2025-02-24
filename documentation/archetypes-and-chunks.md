@@ -1,18 +1,10 @@
 ---
-description: >-
-  You push deeper and deeper into the world... and realise that there is a
-  hidden order in the chaos.
-cover: ../.gitbook/assets/a picture in th 38bbd35d-4a3f-428d-8f86-fc3bd3126bbe.png
-coverY: 32
+description: Archetypes & Chunks, the underlying foundation and storage structure.
 ---
 
 # Archetypes & Chunks
 
-You have come a long way and are pushing ever deeper. You are slowly beginning to understand the background. There is a hidden order in the chaos, **archetypes** and **chunks**.
-
-## Order in chaos
-
-As you look at your creatures, you realise that many of them are similar. They even have an **identical structure**.
+As you look at your entities, you realise that many of them are similar. They even have an **identical structure**.
 
 And this is exactly where **archetypes** come into play. An **archetype** is something **like a table** in a database; it c**ontains all** [**entities**](entity.md) **with exactly the same component structure**. They are part of the [**World**](world.md) and each new combination of entities is stored in a new archetype.
 

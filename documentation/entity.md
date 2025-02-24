@@ -1,22 +1,18 @@
 ---
-description: >-
-  You make your way through the thicket and suddenly there's an entity... but
-  what is it?
-cover: ../.gitbook/assets/wJcs9lQWunu55aaeUEwKq.png
-coverY: 55
+description: The Entity, an abstract being, equipped with data.
 ---
 
 # Entity
 
 In an [entity component system (ECS)](concepts.md), an entity is simply a **unique ID** tag. It represents **an object** in the game or application, but has no logic or data itself. The data and behavior come from **components** that are attached to this entity.
 
-An `Entity` is nothing more than a simple `record struct Entity{ int ID, int WorldId }`. Either you work directly on this entity and its methods, or you simply use [`PURE_ECS`](optimizations/pure\_ecs.md). More on this later.
+An `Entity` is nothing more than a simple `record struct Entity{ int ID, int WorldId }`. Either you work directly on this entity and its methods, or you simply use [`PURE_ECS`](optimizations/pure_ecs.md). More on this later.
 
 {% hint style="info" %}
 Its components can be **anything**, **primitive data types**, **structs** and even **classes**! YOU determine which components and attributes an entity receives, there are **no restrictions** here!
 {% endhint %}
 
-## Creating life
+## Lifecycle
 
 I'm not a dark mage, but I can tell you a little about how to create life. It's actually surprisingly simple... Let's take a look!
 
@@ -33,7 +29,7 @@ Components may vary and this example uses generics, if you don't feel like using
 
 It can be that simple. How does it feel to be a god?
 
-## Changing lives
+## Changing
 
 So you don't stop at changing lives, do you? Entities can be changed in a variety of ways with one or two spells.
 
@@ -84,7 +80,7 @@ Up to 25 generic overloads are available, order does not matter. This often save
 
 Looks like you've made the gnome happy again. Let's take a closer look at him then!
 
-## Dissecting our creature
+## Inspecting
 
 We have created life, changed it, killed it. What is still missing? Looking at it.
 
