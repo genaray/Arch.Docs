@@ -30,7 +30,7 @@ World.Query(in queryDesc, <a data-footnote-ref href="#user-content-fn-3">static<
 
 And already all our entities are moving in the direction of the intruder, brilliant... right?
 
-### Inline query
+## Inline query
 
 Another way is to pass on the values using a Struct. For this we can use the `InlineQuery` and the `IForEach` interface.
 
@@ -56,7 +56,7 @@ The struct prevents the value from being associated. This method is fast and eff
 
 Now our entities are also moving in the direction of the intruder... but more efficiently. Especially good if we have a lot of entities. It's also quite nice, isn't it? But there is another variant.
 
-### Custom loop
+## Custom loop
 
 That's not enough for you? Well, then we have one last ace up our sleeve. You can also write queries yourself!
 
