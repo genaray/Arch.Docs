@@ -68,7 +68,7 @@ A little more manual labour, but an incredible amount of flexibility. This gives
 <pre class="language-csharp"><code class="lang-csharp">var query = world.Query(in desc);
 foreach(ref var chunk in query.GetChunkIterator())
 {
-   var references = <a data-footnote-ref href="#user-content-fn-5">chunk.GetFirst&#x3C;Position, Velocity>;</a>  
+   var references = <a data-footnote-ref href="#user-content-fn-5">chunk.GetFirst&#x3C;Position, Velocity>();</a>  
    <a data-footnote-ref href="#user-content-fn-6">foreach(var entity in chunk)   </a>                       
    {
        <a data-footnote-ref href="#user-content-fn-7">ref var pos = ref Unsafe.Add(ref references.t0, entity);</a>
