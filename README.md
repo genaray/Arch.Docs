@@ -70,7 +70,7 @@ Supports .NetStandard 2.1, .Net Core 8, and therefore you may use it with Unity,
 
 </details>
 
-### Example <a href="#preparing-for-an-adventure" id="preparing-for-an-adventure"></a>
+## Example <a href="#preparing-for-an-adventure" id="preparing-for-an-adventure"></a>
 
 Put on your boots and give it a try, it's easier than you thought...
 
@@ -110,9 +110,16 @@ world.Query(in query, (Entity entity, ref Position pos, ref Velocity vel) => {
 This example is just a foretaste, more syntax and API await you on your adventure! Even non-generic ones and some without lambdas!
 {% endhint %}
 
-### Next steps <a href="#setting-off-on-an-odyssey" id="setting-off-on-an-odyssey"></a>
+## Next steps <a href="#setting-off-on-an-odyssey" id="setting-off-on-an-odyssey"></a>
 
 Where to next? Arch is packed with features. Look at the[ documentation](broken-reference), play around with the [examples ](broken-reference)or make yourself familiar with the[ Extensions](broken-reference). It's hard for me to let you go, but I'm so excited to see where it will take you.
+
+## Socials
+
+Get involved!
+
+* [Github](https://github.com/genaray/Arch)
+* [Discord](https://discord.gg/htc8tX3NxZ)
 
 ## The world of open source...
 
