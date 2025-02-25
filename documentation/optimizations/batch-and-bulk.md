@@ -1,16 +1,14 @@
 ---
-description: >-
-  How great would it be if you could execute a command on ALL your creatures...
-  oh... you can do that!
+description: Batch and Bulk, executing batched commands on all your entities.
 ---
 
 # Batch and Bulk
 
-So... you don't want to **edit** all your [**entities**](../entity.md) individually, but **all at once**? How good that I know what makes you tick, come here my son, I can still teach you something!
+So... you don't want to **edit** all your [**entities**](../entity.md) individually, but **all at once**? How good that I know what makes you tick! In some cases, it is more efficient to carry out operations not on each entity individually, but on all of them together. This is what this chapter is about.
 
-## Mass production
+## Creating
 
-So after your long journey you have finally arrived in the industrial age... Now you want to mass produce entities? Let's take a look at that...
+Let's assume that you don't want to create each entity individually, but many of one type at once. This has some advantages, it is significantly faster and saves resources. Let's take a look at that...
 
 <pre class="language-csharp"><code class="lang-csharp">var signature = <a data-footnote-ref href="#user-content-fn-1">new Signature(typeof(Dwarf), typeof(Position), typeof(Velocity));</a>
 world.Reserve(signature, 1_000_000);
@@ -33,11 +31,11 @@ for(var index = 0; index &#x3C; 1_000_000; index++){
 So space is created for around one million dwarves and this space is then filled by creating the entities through `world.create`. This is fast and efficient, it only needs to allocate memory once.
 {% endhint %}
 
-And within a short space of time, you've built up a huge army... and it's incredibly efficient! Whats your... next... step?!
+And within a short space of time, you've built up a huge army... and it's incredibly efficient! Lets move on.
 
-## Mass customisation
+## Changing
 
-A further step of every good dictator, uhh leader, is to adapt his troops for the coming campaigns. Customising each one individually is too much effort, so it's a good thing that there are modern production lines for this!
+But what if you want to change all entities at once? That works too, of course, and has the same advantages.
 
 <pre class="language-csharp"><code class="lang-csharp">// Giving our dwarfs equipment
 var allDwarfs = new QueryDescription().WithAll&#x3C;Dwarf>().WithNone&#x3C;Axe, Armor, Boots>();
@@ -59,7 +57,7 @@ world.Remove&#x3C;Armor>(in dwarfsWithArmor);
 Each of these operations uses generics and is available in many variations and overloads. Up to **25 parameters** are accepted, but do not have to be passed, in which case the **default values** are used.
 {% endhint %}
 
-These perform their operations on all [**entities**](../entity.md) that match the [**query**](../query.md). The entities are not processed individually but as a set, making this incredibly fast and efficient. Perfect for our huge army!
+These perform their operations on all [**entities**](../entity.md) that match the [**query**](../query.md). The entities are not processed individually but as a set, making this incredibly fast and efficient.&#x20;
 
 [^1]: The signature defines the component structure of an entity, i.e. it is effectively the structure. This notation is part of the [non-generic API](../utilities/non-generic-api.md). Alternatively, `Component<T0...>.Signature` can also be used.
 

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Let's talk about how to deal with entities in queries. Especially about
-  structural changes.
+  Entities in Query, how to handle entities in queries correctly and what to
+  bear in mind.
 ---
 
 # Entities in Query

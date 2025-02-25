@@ -1,7 +1,5 @@
 ---
-description: >-
-  So you have a huge army in front of you... They're all similar somehow, how do
-  you keep them apart?
+description: EntityReference, keep entities apart.
 ---
 
 # EntityReference
@@ -28,4 +26,4 @@ If the original [`Entity`](../entity.md) to which the `EntityReference` points i
 
 And now you can safely and easily handle references to other entities, great, right?
 
-[^1]: Creates a `EntityReference` to the [`Entity`](../entity.md). The [`World`](../world.md) also features such a method if [`PURE_ECS`](../optimizations/pure\_ecs.md) is used.&#x20;
+[^1]: Creates a `EntityReference` to the [`Entity`](../entity.md). The [`World`](../world.md) also features such a method if [`PURE_ECS`](../optimizations/pure_ecs.md) is used.&#x20;

@@ -1,7 +1,5 @@
 ---
-description: >-
-  While your servants scurry around you and fulfill their tasks, you suddenly
-  ask yourself... how do you actually make these processes more efficient?
+description: Optimizations, making arch more efficient.
 ---
 
 # Optimizations

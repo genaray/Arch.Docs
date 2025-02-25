@@ -1,5 +1,5 @@
 ---
-description: A new order is needed to command your entities even more efficiently.
+description: Query-Techniques, running queries more efficiently.
 ---
 
 # Query-Techniques

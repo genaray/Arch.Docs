@@ -1,7 +1,5 @@
 ---
-description: >-
-  What's the point of organized queries if it's sooo much work to write them? We
-  have a solution!
+description: Arch.System.SourceGenerator, automatically generates queries for you.
 ---
 
 # Arch.System.SourceGenerator
@@ -12,7 +10,7 @@ The `Arch.System.SourceGenerator` package provides some code generation utils. W
 
 **Query** methods can be generated **in** [**all classes**](#user-content-fn-1)[^1] **as long as they are partial**. However it makes most sense in the [`BaseSystem`](arch.system.md). The attributes can be used to meaningfully describe what query to generate, and the query will always call the annotated method. And the best, they can even be called manually!
 
-## Start the engine
+## Example
 
 Let's take a look at the whole thing and what is possible with it.
 

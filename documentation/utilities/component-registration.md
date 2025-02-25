@@ -1,7 +1,7 @@
 ---
 description: >-
-  Dive even deeper? You're almost at the earth's core, my dear! Let me show you
-  how to insert components manually!
+  Component Registration, this is how you register and change components in
+  arch.
 ---
 
 # Component Registration
@@ -12,7 +12,7 @@ All components are recorded and stored in the `ComponentRegistry`. It primarily 
 
 These metadata are expressed as `ComponentType`, a struct that you may have seen here and there before. It combines the component with its most important **metadata** and is used precisely for this purpose.
 
-## Changing the (life) building blocks
+## Register components
 
 There are some cases where you might prefer to register your components yourself because YOU simply know more than Arch and C# at that moment. For example, C# has **problems** with **managed structs** or even **classes** here and there. This feature is also useful for **AOT**.
 
@@ -43,7 +43,7 @@ ArrayRegistry.Add<Inventory>();
 These two things do **exactly** the **same thing**, but are slightly less boilerplate code and automatically determine the **code size**.
 {% endhint %}
 
-## Acessing the (life) building blocks
+## Acessing components
 
 You can not only register components but also receive, replace and remove.
 

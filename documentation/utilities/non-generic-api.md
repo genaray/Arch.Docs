@@ -1,7 +1,5 @@
 ---
-description: >-
-  Immerse yourself in the dark magic of the non-generic API. But watch out, it's
-  going to be a wild ride!
+description: Non-generic API, so that you can also work easily with types.
 ---
 
 # Non-generic API
@@ -58,7 +56,7 @@ world.Query(in queryDesc, entity => {});
 
 It's as easy as this. Now you should know roughly what a `Signature` is good for, shouldn't you?
 
-## Changing lives
+## Example
 
 You should have the basics down now, right? Otherwise there are many other cases where the non-generic API is used.
 

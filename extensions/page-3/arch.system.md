@@ -1,5 +1,5 @@
 ---
-description: If only there was a way to organize your queries... wait... there is!
+description: Arch.System, a basis for nesting logic in systems.
 ---
 
 # Arch.System

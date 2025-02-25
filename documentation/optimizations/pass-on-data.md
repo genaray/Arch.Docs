@@ -1,12 +1,12 @@
 ---
-description: How do I actually pass data to the commands that I issue to my entities?
+description: Passing on data, a way to use data from outside in your queries
 ---
 
 # Pass on data
 
-## Closure
+In many cases, it is simply not enough to work with data on the entities alone. Sometimes you also need data from outside... but how do you even do that?
 
-Look, we have an intruder here! It's time to send our army there to eliminate the threat. But how do we even do that?
+## Closure
 
 The easiest way is to transfer the value directly to the [query](../query.md). This is called **Closure**. It is simple, but not particularly efficient. For most purposes, however, it will suffice.
 
@@ -58,7 +58,7 @@ Now our entities are also moving in the direction of the intruder... but more ef
 
 ### Custom loop
 
-That's not enough for you? Well, then we have one last ace up our sleeve. Drink this potion, it will enable you to write queries yourself!
+That's not enough for you? Well, then we have one last ace up our sleeve. You can also write queries yourself!
 
 You can now iterate **archetypes** and **chunks** yourself, which removes any abstraction. This in turn allows you to pass values and logic however you want.
 
@@ -82,7 +82,7 @@ foreach (ref var chunk in query)
 </code></pre>
 
 {% hint style="success" %}
-Fast and efficient. It doesn't really get more efficient than that! It's more boilerplate code, but it's really useful here and there. By the way, if that's not enough for you, have you looked at the source generators?
+Fast and efficient. It doesn't really get more efficient than that! It's more boilerplate code, but it's really useful here and there. By the way, if that's not enough for you, have you looked at the [source generators](../../extensions/page-3/arch.system.sourcegenerator.md)?
 {% endhint %}
 
 And now you can move even more entities efficiently, perhaps even hundreds of thousands? Or even millions? Who knows, time to let them march!
@@ -97,4 +97,4 @@ And now you can move even more entities efficiently, perhaps even hundreds of th
 
 [^5]: Returns the underlying component arrays as spans. We can iterate these ourselves to execute logic.
 
-[^6]: Enumerates over all [Entities](../entity.md) in this chunk to acess their components.&#x20;
+[^6]: Enumerates over all [Entities](../entity.md) in this chunk to acess their components.

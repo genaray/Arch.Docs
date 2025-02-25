@@ -1,7 +1,5 @@
 ---
-description: >-
-  Arch is not enough for you and you think that features are missing? No way,
-  there's even more power here!
+description: Arch.Extended, many useful extensions that take even more work off your hands.
 ---
 
 # Arch.Extended

@@ -1,8 +1,5 @@
 ---
-description: >-
-  You have lots of plans, lots of orders for your subordinates but you can't
-  carry them all out at once? How cool would it be if someone could do it for
-  you?
+description: CommandBuffer, to record operations and play them back at any time.
 ---
 
 # CommandBuffer

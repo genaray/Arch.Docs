@@ -1,16 +1,16 @@
 ---
 description: >-
-  Oh god... you have more entities you want to command? Even at the same time?
-  Time to take a look at this...
+  Multithreading, the simultaneous iteration and modification of entities for
+  extra speed.
 ---
 
 # Multithreading
 
-Millions of dwarves and you want to command and move them all at the same time, but you set yourself high goals. How well Arch is prepared for this!
+Imagine that you have millions of entities and you want to move them all. It gets a bit difficult on a CPU core. But we have a solution for that too!
 
 This is not a problem, because Arch comes with its own [**`JobScheduler`**](https://github.com/genaray/ZeroAllocJobScheduler). This does not generate any garbage and is incredibly fast, even has dependencies and co. What more could you want? Let's be honest!
 
-## Tearing the world apart
+## Setup
 
 Not much is needed to set up multithreading. You set it up, you know it and that's it!
 
@@ -34,7 +34,7 @@ jobScheduler.Dispose();
 So the world uses the `JobScheduler` and you don't need direct contact to it, but if you want to, [**you can also access it directly**](https://github.com/genaray/ZeroAllocJobScheduler)!
 {% endhint %}
 
-## Utilise full resources
+## Example
 
 Wonderful, now we have set up the `JobScheduler`, all we need to do is let it work to utilise the full capacity of our power!
 
@@ -66,7 +66,7 @@ world.InlineParallelQuery&#x3C;VelocityUpdate, Position, Velocity>(<a data-footn
 Each of these calls, whether `world.ParallelQuery` or `world.InlineParallelQuery`, will **block** the **main thread** **until** the [`Query`](../query.md) has been **processed**. The processing itself still takes place in parallel, but the main thread waits before continuing.
 {% endhint %}
 
-## Getting to the roots
+## Lowlevel
 
 If this is all too high level for you, there is also the option of tackling the problem further down. Not below the belt, of course!
 
