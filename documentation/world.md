@@ -4,8 +4,6 @@ description: The World, the place where all Entities live.
 
 # World
 
-The world is a great place, isn't it? Huge, beautiful and full of life. There is so much to discover, let's create one of our own.
-
 The **world stores all its** [**entities**](entity.md), it contains methods to create, destroy and query them and handles all the internal mechanics. Therefore it is the most important class, you will use the world heavily. Time to play God.
 
 ## Lifecycle

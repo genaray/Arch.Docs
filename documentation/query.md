@@ -4,15 +4,13 @@ description: The Query, a way to select and iterate entities
 
 # Query
 
-But how do you actually organize your entities? Well, there are queries for that.
-
 A `Query` is a view of the [World](world.md) and **targets a specific set of** [**entities**](entity.md). It only consists of a `QueryDescription`, which specifies which entities with **which structure are being searched for**. You can specify which components an entity should definitely have, which it should perhaps have and which it should not have at all. It is also possible to search only for the exclusive structure of an entity. Let's take a look at this!
 
-## Iteration
+## All
 
-One dwarf has probably become hundreds. And the elves and humans have also joined us. They buzz around, without a goal, without a task. Time to crack the whip, isn't it?
+A normal iteration targets entities **WITH** specific components. In this example, we want to iterate over all entities that have `Position` and `Velocity` to move them.
 
-<pre class="language-csharp"><code class="lang-csharp">// Creating an army of dwarfs
+<pre class="language-csharp"><code class="lang-csharp">// Creating many different entities
 for(var index = 0; index &#x3C; 1_000, index++){
     world.Create(new Dwarf(), new Position(0,0), new Velocity(1,1), new Pickaxe());
     world.Create(new Elf(), new Position(0,0), new Velocity(1,1), new Bow());
@@ -31,11 +29,11 @@ world.Query(in movementQuery, (Entity entity, ref Position pos, ref Velocity vel
 The methods of the `QueryDescription` can accept up to 25 generic parameters and can be chained together.  Can also be created without generics by passing [`Signature`](utilities/non-generic-api.md). There multiple different [`Query-Variants`](optimizations/query-techniques.md). More on this later.
 {% endhint %}
 
-It looks wonderful, all entities are already moving. It doesn't matter whether they are dwarves, elves or humans. As long as they have the **Position & Velocity** components, they move!
+It doesn't matter whether they are dwarves, elves or humans. As long as they have the **Position & Velocity** components, they move!
 
-## Any and None
+## Any
 
-See how your creatures are marching now, do you feel the power? But what do we do, for example, if we want all beings with a pickaxe **except** the highborn Elven to work for us in the mines? It's time to make the queries a little more complex.
+But what if we need more filters to have all entities except some specific ones? For example, everyone with a `Pickaxe` **EXCEPT** `Elves`to mine ores. It's time to make the queries a little more complex.
 
 ```csharp
 // Targets entities with a pickaxe that are not Elven. So humans and dwarves.
@@ -50,7 +48,9 @@ world.Query(in movementQuery, (ref Pickaxe pickaxe) => {
 You do not necessarily have to pass the [entity](entity.md) in a `Query`.
 {% endhint %}
 
-Excellent, look how they work. But have you thought about the defense? What if we are attacked? Then we would need everyone with a weapon, **whether** sword or bow, to defend ourselves.
+## None
+
+But there is another important filter. Imagine we are attacked and we now want to call all entities with a weapon to the defense. So we need everyone who has **ANY** weapon.
 
 ```csharp
 // Targets entities with either a bow or sword. So elves and humans. 
@@ -67,11 +67,9 @@ world.Query(in movementQuery, (Entity entity) => {
 });
 ```
 
-And we have already created order in our new little kingdom. Everyone does what they can and what they were meant to do.
-
 ## Exclusive
 
-Silence falls and you realize that there is a problem. A new breed of dwarf has grown up. They are even smaller and slighter than their ancestors and can no longer even carry a pickaxe.&#x20;
+There is another case of filters. Sometimes we want to search for entities that have an exclusive set of components. No more and no less than that. In our example, a new type of dwarf that no longer wears pickaxes.
 
 ```csharp
 // New breed of dwarfs, too weak to wear pickaxes
@@ -101,6 +99,6 @@ world.Query(in makeWeakDwarfsExile, (Entity entity) => {
 });
 ```
 
-It's as simple as that. And you've already given them the task of disappearing. We don't need dwarves like that, you're so brutal!
+Next, perhaps we should take a look at what's under the hood of Arch.
 
 [^1]: This is also possible, but it would be better if the `QueryDescription` was not created before each query, but only once.

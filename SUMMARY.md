@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌄 What is Arch?](README.md)
+* [🌄 Why Arch?](README.md)
 
 ## 📖 Documentation
 

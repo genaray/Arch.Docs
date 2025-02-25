@@ -151,3 +151,5 @@ Of course, you can also use the API with simple types. Nobody is forcing you to 
 There's so much more to discover, from extensions like source generators and tools, to integration guides for your favorite engines and more. Dive in and find out for yourself!
 
 </details>
+
+Let's start! First you should get familiar with the [`World`](world.md)`!`

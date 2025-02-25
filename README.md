@@ -18,9 +18,9 @@ layout:
     visible: true
 ---
 
-# 🌄 What is Arch?
+# 🌄 Why Arch?
 
-Let's start with the essentials. Arch is a high-performance C# based Archetype & Chunks [Entity Component System](https://www.wikiwand.com/en/Entity_component_system) (ECS) for game development and data-oriented programming. To summarize:
+Arch is a high-performance C# based Archetype & Chunks [Entity Component System](https://www.wikiwand.com/en/Entity_component_system) (ECS) for game development and data-oriented programming. To summarize:
 
 <details>
 

@@ -14,9 +14,9 @@ Its components can be **anything**, **primitive data types**, **structs** and ev
 
 ## Lifecycle
 
-I'm not a dark mage, but I can tell you a little about how to create life. It's actually surprisingly simple... Let's take a look!
+Creating entities is really simple!&#x20;
 
-<pre class="language-csharp"><code class="lang-csharp">var world = World.Create(); // Must exist somewhere
+<pre class="language-csharp"><code class="lang-csharp">var world = World.Create(); // World must exist somewhere
 
 // A dwarf with a string, position and velocity component was born and killed
 <strong>var dwarf = world.Create(new Dwarf("Gimli"), new Position(0,0), new Velocity());
@@ -27,11 +27,11 @@ I'm not a dark mage, but I can tell you a little about how to create life. It's 
 Components may vary and this example uses generics, if you don't feel like using generics, there are still [plenty of APIs without them](utilities/non-generic-api.md).
 {% endhint %}
 
-It can be that simple. How does it feel to be a god?
+How does it feel to be a god? Now lets step one further.&#x20;
 
 ## Changing
 
-So you don't stop at changing lives, do you? Entities can be changed in a variety of ways with one or two spells.
+Changing entities is of course also possible and also very easy.
 
 <pre class="language-csharp"><code class="lang-csharp">// Create our beloved dwarf
 var dwarf = world.Create(new Dwarf("Gimli"), new Position(0,0), new Velocity());
@@ -53,7 +53,7 @@ dwarf.Remove&#x3C;Pickaxe>();
 The safety check using `.Has<T>()` is important. Arch does not do this itself because because our mantra is raw performance and we trust you as a developer to know when to check and when not to.
 {% endhint %}
 
-Nah great, I think you've really made the dwarf angry. Nobody takes a pickaxe away from a dwarf. Let's try to make up for it.
+We have now added a component to the entity (the pickaxe) and removed it again immediately. Now let's see how we can do this for several components at the same time.
 
 ```csharp
 // Adding components to our dwarf in batch (We could also pass them as parameters)
@@ -78,11 +78,11 @@ if(dwarf.Has<Bow, ElvishArmor, LongWhiteHair>()){
 Up to 25 generic overloads are available, order does not matter. This often saves code and is often faster.
 {% endhint %}
 
-Looks like you've made the gnome happy again. Let's take a closer look at him then!
+Great, now you know how to change and use an entity. But how do you look at it?
 
 ## Inspecting
 
-We have created life, changed it, killed it. What is still missing? Looking at it.
+Inspecting entities is also a rather simple task.&#x20;
 
 ```csharp
 var types = dwarf.GetComponentTypes();       // Getting all types, readonly
