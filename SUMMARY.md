@@ -28,9 +28,10 @@
   * [Arch.System](extensions/page-3/arch.system.md)
   * [Arch.System.SourceGenerator](extensions/page-3/arch.system.sourcegenerator.md)
 
-## 💡 Examples
+## 💡 Examples & Guidelines
 
-* [Entities in Query](examples/page-2.md)
+* [Entities in Query](examples-and-guidelines/page-2.md)
+* [Structural changes](examples-and-guidelines/structural-changes.md)
 
 ## ✏️ Misc
 

@@ -98,7 +98,7 @@ The entity also has a debug view which reveals even more information.
 
 There are **no hidden costs** in Arch, [**everything** **happens directly**](concepts.md#performance-performance-performance) without any black magic under the hood or hidden code slowing down your system. This means that everything is executed directly, without abstraction costs, the only disadvantage is that **you have to make sure** and **check** that your action makes sense at that point.
 
-Even if it is possible to create entities during a query, change its structure or destroy it, **we recommend** [**buffering**](utilities/commandbuffer.md) **these operations and performing them after the query**. Take a look at the [examples](../examples/page-2.md)!
+Even if it is possible to create entities during a query, change its structure or destroy it, **we recommend** [**buffering**](utilities/commandbuffer.md) **these operations and performing them after the query**. Take a look at the [examples](../examples-and-guidelines/page-2.md)!
 
 [^1]: `TryGet`also exists.
 
