@@ -43,7 +43,7 @@ ArrayRegistry.Add<Inventory>();
 These two things do **exactly** the **same thing**, but are slightly less boilerplate code and automatically determine the **code size**.
 {% endhint %}
 
-## Acessing components
+## Accessing components
 
 You can not only register components but also receive, replace and remove.
 
