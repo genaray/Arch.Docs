@@ -36,3 +36,4 @@
 ## ✏️ Misc
 
 * [Roadmap](misc/page-4.md)
+* [FAQ](misc/faq.md)
