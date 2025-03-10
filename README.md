@@ -121,6 +121,6 @@ Get involved!
 * [Github](https://github.com/genaray/Arch)
 * [Discord](https://discord.gg/htc8tX3NxZ)
 
-## The world of open source...
+## Support this project!
 
 But before you leave, take a moment to value this project. Do you notice anything? It is completely **open source**! You can **contribute** and **change** every aspect! So if you like it, [**leave a star** ⭐](https://github.com/genaray/Arch) and [**buy us a coffee** ☕](https://github.com/sponsors/genaray) to support further development!
