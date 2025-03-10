@@ -27,6 +27,9 @@
 * [Arch.Extended](extensions/page-3/README.md)
   * [Arch.System](extensions/page-3/arch.system.md)
   * [Arch.System.SourceGenerator](extensions/page-3/arch.system.sourcegenerator.md)
+  * [Arch.EventBus](extensions/page-3/arch.eventbus.md)
+  * [Arch.AOT.SourceGenerator](extensions/page-3/arch.aot.sourcegenerator.md)
+  * [Arch.LowLevel](extensions/page-3/arch.lowlevel.md)
 
 ## 💡 Examples & Guidelines
 
