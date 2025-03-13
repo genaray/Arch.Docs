@@ -22,6 +22,7 @@ This compile-time-static method registers the component and returns its meta dat
 
 ```csharp
 var componentType = ComponentRegistry.GetComponentType(typeof(Dwarf));
+var sameComponentType = (ComponentType)typeof(Dwarf);
 ```
 
 {% hint style="info" %}

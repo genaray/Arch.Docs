@@ -21,6 +21,7 @@
   * [EntityReference](documentation/utilities/entityreference.md)
   * [CommandBuffer](documentation/utilities/commandbuffer.md)
   * [Events](documentation/utilities/events.md)
+  * [Dangerous Extensions](documentation/utilities/dangerous-extensions.md)
 
 ## 🧩 Extensions
 

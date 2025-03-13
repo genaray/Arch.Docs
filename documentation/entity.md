@@ -6,7 +6,7 @@ description: The Entity, an abstract being, equipped with data.
 
 In an [entity component system (ECS)](concepts.md), an entity is simply a **unique ID** tag. It represents **an object** in the game or application, but has no logic or data itself. The data and behavior come from **components** that are attached to this entity.
 
-An `Entity` is nothing more than a simple `record struct Entity{ int ID, int WorldId }`. Either you work directly on this entity and its methods, or you simply use [`PURE_ECS`](optimizations/pure_ecs.md). More on this later.
+An `Entity` is nothing more than a simple `record struct Entity{ int ID, int WorldId, int Version }`. Either you work directly on this entity and its methods, or you simply use [`PURE_ECS`](optimizations/pure_ecs.md). More on this later.
 
 {% hint style="info" %}
 Its components can be **anything**, **primitive data types**, **structs** and even **classes**! YOU determine which components and attributes an entity receives, there are **no restrictions** here!
@@ -29,7 +29,7 @@ Components may vary and this example uses generics, if you don't feel like using
 
 How does it feel to be a god? Now lets step one further.&#x20;
 
-## Changing
+## Change
 
 Changing entities is of course also possible and also very easy.
 
@@ -78,9 +78,26 @@ if(dwarf.Has<Bow, ElvishArmor, LongWhiteHair>()){
 Up to 25 generic overloads are available, order does not matter. This often saves code and is often faster.
 {% endhint %}
 
-Great, now you know how to change and use an entity. But how do you look at it?
+## Reference
 
-## Inspecting
+We can easily reference other entities using the `Entity` struct. Even if the entities recycle (and thus the Id of an entity can reappear), each `Entity` has an `Entity.Version` which functions as a timestamp.
+
+```csharp
+var dwarf = world.Create<Dwarf, Position, Velocity>();
+world.Destroy(dwarf);
+var recycledDwarf = world.Create<Dwarf, Position, Velocity>();
+
+Console.WriteLine($"Dwarf-Id: {dwarf.Id} and RecycledDwarf-Id: {recycledDwarf.Id}");
+Console.WriteLine(dwarf == recycledDwarf); // False, same Id but different versions
+```
+
+{% hint style="warning" %}
+We should always compare the `Entity`s directly, never just via the Id!
+{% endhint %}
+
+So you can simply save an `Entity` somewhere and use it as a direct reference to access it at any time.
+
+## Inspect
 
 Inspecting entities is also a rather simple task.&#x20;
 

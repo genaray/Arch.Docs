@@ -75,16 +75,16 @@ Supports .NetStandard 2.1, .Net Core 8, and therefore you may use it with Unity,
 Put on your boots and give it a try, it's easier than you thought...
 
 ```sh
-dotnet add PROJECT package Arch --version 1.3.3-alpha
+dotnet add PROJECT package Arch --version 2.0.0
 ```
 
-Don't miss your luggage and briefly import Arch...
+Then import Arch next, so that Arch and its methods are available to you...
 
 ```csharp
 using Arch;
 ```
 
-And your journey can begin! It wasn't difficult, was it? Let's take a look at this example together, it should open your eyes and show you where the journey is heading.
+And your journey can begin! Now let's take a quick look at a small example before you can dive in completely!
 
 ```csharp
 using Arch;
@@ -95,14 +95,14 @@ public record struct Velocity(float Dx, float Dy);
 
 // Create a world and an entity with position and velocity.
 using var world = World.Create();
-var adventurer = world.Create(new Position(0,0), new Velocity(1,1));
+var player = world.Create(new Position(0,0), new Velocity(1,1));
 
 // Enumerate all entities with Position & Velocity to move them
 var query = new QueryDescription().WithAll<Position,Velocity>();
 world.Query(in query, (Entity entity, ref Position pos, ref Velocity vel) => {
     pos.X += vel.Dx;
     pos.Y += vel.Dy;
-    Console.WriteLine($"Moved adventurer: {entity.Id}"); 
+    Console.WriteLine($"Moved player: {entity.Id}"); 
 }); 
 ```
 

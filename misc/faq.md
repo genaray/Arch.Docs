@@ -59,3 +59,19 @@ Arch also **works** in **AOT** environments. Depending on how you use it, howeve
 You can do that too! In arch you can simply use classes and structs as components without having to play around with pointers or forcing only structs. This even has some advantages, it is faster to develop with it! If you want to get the **maximum performance** out of it, we still recommend using only **unmanaged structs** as components.
 
 </details>
+
+<details>
+
+<summary>ECS for everything?</summary>
+
+ECS is a **tool** not a silver bullet. Sooner or later you will encounter problems that simply cannot be mapped as well with an ECS. Don't use an ECS for everything, but **complement** it **with other tools** that help you. Forcing it never works!
+
+</details>
+
+<details>
+
+<summary>How do i make queries run spatial?</summary>
+
+You don't. ECS is not intended to do everything, for this case you will likely require an additional data structure on top of Arch that is being used together.
+
+</details>

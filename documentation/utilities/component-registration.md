@@ -6,13 +6,11 @@ description: >-
 
 # Component Registration
 
-You've experienced a lot along the way, but you never stop learning... right? So you've reached a point where you want to register and modify [**components**](../entity.md) yourself. Then let's take a look!
-
 All components are recorded and stored in the `ComponentRegistry`. It primarily stores **meta data** such as the **size** and **types** of the **components**, which are then queried at runtime as a compile-time static or manually to access the underlying arrays of [`Archetypes`](../archetypes-and-chunks.md) and [`Chunks`](../archetypes-and-chunks.md) and more.
 
 These metadata are expressed as `ComponentType`, a struct that you may have seen here and there before. It combines the component with its most important **metadata** and is used precisely for this purpose.
 
-## Register components
+## Register
 
 There are some cases where you might prefer to register your components yourself because YOU simply know more than Arch and C# at that moment. For example, C# has **problems** with **managed structs** or even **classes** here and there. This feature is also useful for **AOT**.
 
@@ -43,7 +41,7 @@ ArrayRegistry.Add<Inventory>();
 These two things do **exactly** the **same thing**, but are slightly less boilerplate code and automatically determine the **code size**.
 {% endhint %}
 
-## Acessing components
+## Acess
 
 You can not only register components but also receive, replace and remove.
 

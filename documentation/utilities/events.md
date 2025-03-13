@@ -4,11 +4,9 @@ description: Events, so that arch notifies you of everything that happens.
 
 # Events
 
-It's a familiar situation: weeks have gone by again and your friends and family haven't contacted you... what a sad life. How good that you have us, because you can configure Arch so that you are informed about everything important!
-
 **With events, you get to know about all important entity actions and can react accordingly!** This is exactly what the `EVENTS` flag is for, which you can set in Arch to enable all hooks. However, you have to modify the source code for this, it's best to take a look at the chapter on [`PURE_ECS`](../optimizations/pure_ecs.md)!
 
-## Become omniscient
+## Example
 
 There is not much to say. As soon as the `EVENTS` flag has been set, we can get started straight away and hook into all the important methods.
 

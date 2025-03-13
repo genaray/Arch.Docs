@@ -10,7 +10,7 @@ We need to have another serious talk about what you can and should and should no
 
 In principle, we recommend the use of a [`CommandBuffer`](../documentation/utilities/commandbuffer.md) **when** it comes to **creating** or **deleting** entities in a **query** or changing their structure. Or to simply make these changes outside a query. **Changes to component values are never a problem.**
 
-## Creating in Query
+## Create in Query
 
 Creating entities in `Queries` is harmless for the time being, nothing can go wrong.
 
@@ -26,7 +26,7 @@ world.Query(queryDesc, (ref DwarfSpawner spawner) => {
 The entities are created appropriately, everything is great. Arch iterates from back to front, new entities are appended at the end and therefore not reached during the query.
 {% endhint %}
 
-## Modifying in Query
+## Modify in Query
 
 You can usually edit existing data on entities without any problems.
 
@@ -53,7 +53,7 @@ world.Query(queryDesc, (Entity entity, ref Dwarf dwarf) => {
 You have to be careful here. It is generally recommended **NOT** to change the structure of an entity during a query. It may work, but it directly moves the entity to another [`Archetype`](../documentation/archetypes-and-chunks.md), which can lead to problems. We therefore recommend extensive testing or the [`CommandBuffer`](../documentation/utilities/commandbuffer.md).
 {% endhint %}
 
-## Deleting in Query
+## Delete in Query
 
 This is where it gets interesting and fun. Let's take a look at this case.
 

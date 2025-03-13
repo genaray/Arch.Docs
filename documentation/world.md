@@ -21,6 +21,22 @@ Multiple worlds can be used in parallel, each instance and its entities are comp
 
 Best of all, you can create any number of worlds with almost infinite entities. You rarely have so much life and freedom. To be precise,`2,147,483,647` worlds with `2,147,483,647` entities each are possible.&#x20;
 
+## Customize
+
+You can also customize the world a little to suit your needs, for example the initial capacity or how big the [`chunks`](archetypes-and-chunks.md) should be:
+
+<pre class="language-csharp"><code class="lang-csharp">var customizedWorld = World.Create(
+<strong>    chunkSizeInBytes: 16_382,              // The base size of each chunk
+</strong><strong>    minimumAmountOfEntitiesPerChunk: 100,  // The base amount of entities per chunk
+</strong><strong>    archetypeCapacity: 8,                  // The initial size of the archetype array
+</strong><strong>    entityCapacity: 64                     // The initial amount of entities
+</strong>);
+</code></pre>
+
+{% hint style="info" %}
+Adjusting this is not absolutely necessary, but can be quite helpful. These are always initial values that Arch uses as a guide. It may well be that Arch deviates upwards in some cases, especially with the `chunkSizeInBytes` or the `minimumAmountOfEntitiesPerChunk`.
+{% endhint %}
+
 ## Good to know
 
 Now we have a world. A world with all the prerequisites for creating life, changing it and destroying it.

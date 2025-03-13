@@ -1,5 +1,6 @@
 ---
 description: EntityReference, keep entities apart.
+hidden: true
 ---
 
 # EntityReference

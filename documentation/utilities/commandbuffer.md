@@ -6,6 +6,8 @@ description: CommandBuffer, to record operations and play them back at any time.
 
 It's often like this... we have a lot planned, but we can't do it all at once, **we have to work through it piece by piece**. The same applies to your world and entities, of course... and we have something for that here! The **CommandBuffer** is exactly for that. You can give it your **commands**, **it saves them** and **executes them at a later time**. Practical, especially for **multithreading** and if you want to postpone changes until later.
 
+## Example
+
 <pre class="language-csharp"><code class="lang-csharp">// Our dwarf
 var dwarf = world.Create(new Dwarf(), new Position(), new Velocity());
 

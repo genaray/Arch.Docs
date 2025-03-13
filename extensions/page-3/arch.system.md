@@ -4,7 +4,9 @@ description: Arch.System, a basis for nesting logic in systems.
 
 # Arch.System
 
-&#x20;With `Arch.System` you can organize your queries in `Systems` and call and reuse them at will.
+&#x20;With `Arch.System` you can organize your queries in `Systems` and call and reuse them at will.&#x20;
+
+## Example
 
 <pre class="language-csharp"><code class="lang-csharp">public class MovementSystem : <a data-footnote-ref href="#user-content-fn-1">BaseSystem&#x3C;World, float></a>
 {
