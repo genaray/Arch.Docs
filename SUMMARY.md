@@ -43,6 +43,7 @@
 * [Cubetory](projects-using-arch/cubetory.md)
 * [SS14](projects-using-arch/ss14.md)
 * [EquilibriumEngine-CSharp](projects-using-arch/equilibriumengine-csharp.md)
+* [Rougelite-Survivor](projects-using-arch/rougelite-survivor.md)
 
 ## ✏️ Misc
 
