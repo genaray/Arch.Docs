@@ -12,7 +12,7 @@ This is where `PURE_ECS` comes into play. This is a way of reducing the empty si
 
 How do you do that, you ask? It takes a bit of work, but it's worth it.
 
-As this feature is based on **C# preprocessor flags**, you first need the source. You must therefore include [**Arch's source code**](https://github.com/genaray/Arch/tree/master/src/Arch) in your project and cannot use the Arch nugget. You will also need an [**Arch's source generator**](https://github.com/genaray/Arch/tree/master/src/Arch.SourceGen). The best way to do this is to [**fork Arch**](https://github.com/genaray/Arch/fork). Once you've done that, you only have to do one thing. [Set `PURE_ECS` as a flag for the project in the C# project configurations.](https://www.jetbrains.com/help/rider/Build_Configurations.html#dgy9hp_14)
+As this feature is based on **C# preprocessor flags**, you first need the source. You must therefore include [**Arch's source code**](https://github.com/genaray/Arch/tree/master/src/Arch) in your project and cannot use the Arch nugget. The best way to do this is to [**fork Arch**](https://github.com/genaray/Arch/fork). Once you've done that, you only have to do one thing. [Set `PURE_ECS` as a flag for the Arch project in the C# project configurations.](https://www.jetbrains.com/help/rider/Build_Configurations.html#dgy9hp_14)
 
 Now you have your fork with `PURE_ECS` as preprocessor flag. To use this in your own project, you only need to do one more thing. Remove Arch as nuget and add your own Arch fork to your own project to enjoy the new features.
 

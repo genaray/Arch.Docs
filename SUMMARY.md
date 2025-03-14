@@ -37,6 +37,13 @@
 * [Entities in Query](examples-and-guidelines/page-2.md)
 * [Structural changes](examples-and-guidelines/structural-changes.md)
 
+## 🎮 Projects using Arch
+
+* [Skylandkingdoms](projects-using-arch/skylandkingdoms.md)
+* [Cubetory](projects-using-arch/cubetory.md)
+* [SS14](projects-using-arch/ss14.md)
+* [EquilibriumEngine-CSharp](projects-using-arch/equilibriumengine-csharp.md)
+
 ## ✏️ Misc
 
 * [Roadmap](misc/page-4.md)
