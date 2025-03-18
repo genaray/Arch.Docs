@@ -34,6 +34,7 @@
 
 ## 💡 Examples & Guidelines
 
+* [Arch.Samples](examples-and-guidelines/arch.samples.md)
 * [Entities in Query](examples-and-guidelines/page-2.md)
 * [Structural changes](examples-and-guidelines/structural-changes.md)
 
