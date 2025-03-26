@@ -25,8 +25,8 @@ All elves with the same structure are therefore in one archetype. And all dwarve
 Let's look at another example.
 
 ```csharp
-var dwarf = world.Create(new Dwarf(), new Position(), new Velocity();
-var miningDwarf = world.Create(new Dwarf(), new Position(), new Velocity(), new Pickaxe();
+var dwarf = world.Create(new Dwarf(), new Position(), new Velocity());
+var miningDwarf = world.Create(new Dwarf(), new Position(), new Velocity(), new Pickaxe());
 ```
 
 {% hint style="success" %}
