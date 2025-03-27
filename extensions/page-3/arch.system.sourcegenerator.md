@@ -19,7 +19,7 @@ Let's take a look at the whole thing and what is possible with it.
     
     <a data-footnote-ref href="#user-content-fn-3">[Query] </a>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public void MoveEntity(<a data-footnote-ref href="#user-content-fn-4">[Data]</a> ref float time, <a data-footnote-ref href="#user-content-fn-5">ref Position pos, in Velocity vel</a>)
+    public void MoveEntity(<a data-footnote-ref href="#user-content-fn-4">[Data]</a> in float time, <a data-footnote-ref href="#user-content-fn-5">ref Position pos, in Velocity vel</a>)
     {
         pos.X += time * vel.X;
         pos.Y += time * vel.Y;
@@ -75,7 +75,7 @@ public partial class MovementSystem : BaseSystem<World, GameTime>
 
     [Query]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public void MoveEntity([Data] ref float time, ref Position pos, ref Velocity vel)
+    public void MoveEntity([Data] in float time, ref Position pos, ref Velocity vel)
     {
         pos.X += time * vel.X;
         pos.Y += time * vel.Y;
