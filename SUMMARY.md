@@ -31,6 +31,7 @@
   * [Arch.EventBus](extensions/page-3/arch.eventbus.md)
   * [Arch.AOT.SourceGenerator](extensions/page-3/arch.aot.sourcegenerator.md)
   * [Arch.LowLevel](extensions/page-3/arch.lowlevel.md)
+  * [Arch.Persistence](extensions/page-3/arch.persistence.md)
 
 ## 💡 Examples & Guidelines
 
