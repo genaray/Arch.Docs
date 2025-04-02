@@ -31,7 +31,7 @@ The methods of the `QueryDescription` can accept up to 25 generic parameters and
 
 It doesn't matter whether they are dwarves, elves or humans. As long as they have the **Position & Velocity** components, they move!
 
-## Any
+## None
 
 But what if we need more filters to have all entities except some specific ones? For example, everyone with a `Pickaxe` **EXCEPT** `Elves`to mine ores. It's time to make the queries a little more complex.
 
@@ -48,7 +48,7 @@ world.Query(in movementQuery, (ref Pickaxe pickaxe) => {
 You do not necessarily have to pass the [entity](entity.md) in a `Query`.
 {% endhint %}
 
-## None
+## Any
 
 But there is another important filter. Imagine we are attacked and we now want to call all entities with a weapon to the defense. So we need everyone who has **ANY** weapon.
 
