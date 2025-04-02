@@ -32,6 +32,7 @@
   * [Arch.AOT.SourceGenerator](extensions/page-3/arch.aot.sourcegenerator.md)
   * [Arch.LowLevel](extensions/page-3/arch.lowlevel.md)
   * [Arch.Persistence](extensions/page-3/arch.persistence.md)
+  * [Arch.Relationships](extensions/page-3/arch.relationships.md)
 
 ## 💡 Examples & Guidelines
 
