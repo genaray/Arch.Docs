@@ -8,7 +8,7 @@ How do I actually use Arch in Unity? There are several ways, let's take a look a
 
 ## Dlls
 
-The easiest way is to integrate Arch through its dlls. When building each version, dlls for the different versions are created and uploaded to Arch CI/CD Pipeline. You can simply put them in the assets/plugins folder and you can use arch everywhere. The only disadvantage is that you need not only Arch dlls but also the dlls of Arch's dependencies. This includes `Arch.LowLevel`, `Collections.Pooled` and possibly `Arch.System` and co depending on what you want to use additionally. An example project can be found [here](https://github.com/decentraland/unity-explorer/tree/dev/Explorer/Assets/Plugins/Arch).
+The easiest way is to integrate Arch through its dlls. When building each version, dlls for the different versions are created and uploaded to [Arch CI/CD Pipeline](https://github.com/genaray/Arch/actions). You can simply put them in the assets/plugins folder and you can use arch everywhere. The only disadvantage is that you need not only Arch dlls but also the dlls of Arch's dependencies. This includes `Arch.LowLevel`, `Collections.Pooled` and possibly `Arch.System` and co depending on what you want to use additionally. An example project can be found [here](https://github.com/decentraland/unity-explorer/tree/dev/Explorer/Assets/Plugins/Arch).
 
 ## NuGetForUnity
 
