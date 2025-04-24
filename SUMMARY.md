@@ -15,6 +15,7 @@
   * [Batch and Bulk](documentation/optimizations/batch-and-bulk.md)
   * [PURE\_ECS](documentation/optimizations/pure_ecs.md)
   * [Multithreading](documentation/optimizations/multithreading.md)
+  * [EntityData](documentation/optimizations/entitydata.md)
 * [Utilities](documentation/utilities/README.md)
   * [Component Registration](documentation/utilities/component-registration.md)
   * [Non-generic API](documentation/utilities/non-generic-api.md)
@@ -39,6 +40,10 @@
 * [Arch.Samples](examples-and-guidelines/arch.samples.md)
 * [Entities in Query](examples-and-guidelines/page-2.md)
 * [Structural changes](examples-and-guidelines/structural-changes.md)
+
+***
+
+* [Unity](unity.md)
 
 ## 🎮 Projects using Arch
 

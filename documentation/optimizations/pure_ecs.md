@@ -18,6 +18,10 @@ Now you have your fork with `PURE_ECS` as preprocessor flag. To use this in your
 
 How you integrate this is up to you. You can copy your Arch fork manually into your project, for example. What I recommend, however, are [**Git submodules**](https://git-scm.com/book/en/v2/Git-Tools-Submodules). This way you can simply integrate your own Arch fork into your project using Git.
 
+{% hint style="success" %}
+There is now also a nuget that saves you this manual work: [https://www.nuget.org/packages/Arch-PureECS/](https://www.nuget.org/packages/Arch-Events/)
+{% endhint %}
+
 ## Example
 
 So now you have Arch with `Pure_ECS` in your project... what now? Firstly, you should notice that you can no longer work directly on the [`Entity`](../entity.md) struct. This is intentional, the entity has been minimised and no longer knows which world it is in. You have to adapt and tell it yourself!

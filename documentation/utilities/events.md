@@ -24,3 +24,8 @@ These methods are called directly after the respective operation, so there is no
 {% endhint %}
 
 And now we know what's happening, we're finally complete control freaks!
+
+{% hint style="success" %}
+There is now also a nuget that saves you this manual work: [https://www.nuget.org/packages/Arch-Events/](https://www.nuget.org/packages/Arch-Events/)
+{% endhint %}
+
