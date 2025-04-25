@@ -75,7 +75,7 @@ Supports .NetStandard 2.1, .Net Core 8, and therefore you may use it with Unity,
 Put on your boots and give it a try, it's easier than you thought...
 
 ```sh
-dotnet add PROJECT package Arch --version 2.0.0
+dotnet add PROJECT package Arch --version 2.1.0-beta
 ```
 
 Then import Arch next, so that Arch and its methods are available to you...
